@@ -1,0 +1,62 @@
+<div id="apexScreenRecorder">
+  <style>
+    #apexScreenRecorder {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: #f9fafb;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      width: fit-content;
+    }
+    #apexScreenRecorder .t-Button {
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 8px 16px;
+      transition: all 0.25s ease-in-out;
+      letter-spacing: 0.3px;
+    }
+    #apexScreenRecorder .t-Button--primary {
+      background: linear-gradient(135deg, #4CAF50, #81C784);
+      border: none;
+      color: #fff;
+    }
+    #apexScreenRecorder .t-Button--primary:hover {
+      background: linear-gradient(135deg, #43A047, #66BB6A);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(76,175,80,0.3);
+    }
+    #apexScreenRecorder .t-Button--primary:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+    #apexScreenRecorder .t-Button:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(76,175,80,0.3);
+    }
+    #apexScreenRecorder #recStatus {
+      font-size: 13px;
+      color: #666;
+      font-style: italic;
+      white-space: nowrap;
+    }
+    #apexScreenRecorder:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease;
+    }
+  </style>
+
+  <button type="button"
+          class="t-Button t-Button--primary"
+          onclick="openRecorderPopup()">
+    Open Screen Recorder
+  </button>
+
+  <span id="recStatus"
+        style="margin-left:12px;font-size:13px;color:gray;">
+    Recorder runs in a separate window
+  </span>
+</div>
